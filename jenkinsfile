@@ -20,6 +20,10 @@ pipelinen {
         steps {
             sh 'mvn test'
         }
-      }    
+      } 
+       stage ('deploy') {
+        steps {
+            echo 'deploy'
+        }   
     }
 }
