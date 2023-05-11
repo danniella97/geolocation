@@ -1,4 +1,4 @@
-pipelinen {
+pipeline {
 
     triggers {
         pollSCM '* * * * *'
@@ -20,6 +20,7 @@ pipelinen {
         steps {
             sh 'mvn test'
         }
-      }    
+      } 
+
     }
 }
